@@ -53,7 +53,7 @@ function Navbar() {
           </li>
           <li>
             <details>
-              <summary>Rent</summary>
+              <summary>Motocycle</summary>
               <ul className="p-2">
                 <li>
                   <a>Honda</a>
@@ -84,6 +84,9 @@ function Navbar() {
                 </li>
               </ul>
             </details>
+          </li>
+          <li>
+            <a>Rent</a>
           </li>
           <li>
             <a>Contact</a>
