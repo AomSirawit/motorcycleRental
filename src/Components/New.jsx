@@ -25,7 +25,7 @@ function New() {
             <div className="card card-compact w-96 bg-base-100 shadow-xl ml-5">
               <figure>
               
-                <img className="w-full bg-white" src={card.imageUrl} alt={card.title} />
+                <img className="w-80 bg-white" src={card.imageUrl} alt={card.title} />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{card.title}</h2>

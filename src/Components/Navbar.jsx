@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
@@ -26,30 +27,67 @@ function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <Link to="home" spy={true} smooth={true} duration={500}>
+                Home
+              </Link>
             </li>
             <li>
-              <a>Parent</a>
+              <a>Motocycle</a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Honda</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Yamaha</a>
+                </li>
+                <li>
+                  <a>Suzuki</a>
+                </li>
+                <li>
+                  <a>Kawasaki</a>
+                </li>
+                <li>
+                  <a>BMW</a>
+                </li>
+                <li>
+                  <a>Ducati</a>
+                </li>
+                <li>
+                  <a>Harley - Davidson</a>
+                </li>
+                <li>
+                  <a>KTM</a>
+                </li>
+                <li>
+                  <a>Triumph</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link to="new" spy={true} smooth={true} duration={500}>
+                New Bike
+              </Link>
+            </li>
+            <li>
+              <Link to="rent" spy={true} smooth={true} duration={500}>
+                Rent
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" spy={true} smooth={true} duration={500}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">TTT</a>
+        <a className="btn btn-ghost text-xl">MotorRental</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <Link to="home" spy={true} smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
           <li>
             <details>
@@ -86,15 +124,25 @@ function Navbar() {
             </details>
           </li>
           <li>
-            <a>Rent</a>
+            <Link to="new" spy={true} smooth={true} duration={500}>
+              New Bike
+            </Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link to="rent" spy={true} smooth={true} duration={500}>
+              Rent
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" spy={true} smooth={true} duration={500}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+      <button className="btn">Login</button>
+      
       </div>
     </div>
   );
