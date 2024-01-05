@@ -1,7 +1,7 @@
 # React + Vite
 # MotorRental
 
-Rental BigBike Website Frontend.
+Rental Motocycle Frontend Website.
 
 ## Installation & Guide
 
